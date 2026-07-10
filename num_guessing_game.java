@@ -13,7 +13,7 @@ class num_guessing_game{
         int guess = ss.nextInt();
  
         if(randomnum==guess){
-            System.out.println("Congratulations your guess was right");
+            System.out.println("Congratulations your guess : "+randomnum+ " was right");
             break;
 
         }
