@@ -30,22 +30,22 @@ public class tempconverter {
 
             switch (choice) {
                 case 1:
-                    System.out.println("The converted temperature is : " +celsiustofahrenheit( temperature));
+                    System.out.println(+temperature+"celsius = " +celsiustofahrenheit( temperature)+"Fahrenheit");
                     break;
                 case 2:
-                    System.out.println("The converted temperature is : " +celsiustokelvin(temperature));
+                    System.out.println(+temperature+"celsius = "  +celsiustokelvin(temperature)+"Kelvin");
                     break;
                 case 3:
-                    System.out.println("The converted temperature is : " +fahrenheittocelsius(temperature));
+                    System.out.println(+temperature+"Fahrenheit = "  +fahrenheittocelsius(temperature)+"Celsius");
                     break;
                 case 4:
-                    System.out.println("The converted temperature is : " +fahrenheittokelvin(temperature));
+                    System.out.println(+temperature+"Fahrenheit = "  +fahrenheittokelvin(temperature)+"Kelvin");
                     break;
                 case 5:
-                    System.out.println("The converted temperature is : " +kelvintocelsius(temperature));
+                    System.out.println(+temperature+"Kelvin = "  +kelvintocelsius(temperature)+"Celsius");
                     break;
                 case 6:
-                    System.out.println("The converted temperature is : " +kelvintofahrenheit(temperature));
+                    System.out.println(+temperature+"Kelvin = "  +kelvintofahrenheit(temperature)+"Fahrenheit");
                     break;
                 default:
                     System.out.println("Invalid result");
