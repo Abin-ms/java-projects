@@ -12,7 +12,9 @@ public class rockpaperscissor {
         int score2 = 0;
 
         while (true) {
-            System.out.println("____________________\n");
+            System.out.println("_________________________\n");
+            System.out.println("Rock - Paper - Scissors");
+            System.out.println("_________________________\n");
             System.out.println("Enter your choice\n");
             System.out.println("1.Rock\n");
             System.out.println("2.Paper\n");
@@ -24,6 +26,7 @@ public class rockpaperscissor {
 
             if (choice == 4) {
                 System.out.println("Thank you!!");
+                System.out.println("____________________\n");
                 break;
 
             }
@@ -39,45 +42,45 @@ public class rockpaperscissor {
             System.out.println("\nUsers input is : " + user + "\n");
             System.out.println("Computers input is : " + computer + "\n");
 
-            if (user == computer) {
-                 System.out.println("____________________\n");
+            if (choice == computersChoice) {
+                System.out.println("____________________\n");
                 System.out.println("The match is a draw");
                 System.out.println("score : \n");
                 System.out.println("user : " + score1);
                 System.out.println("Computer : " + score2);
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
             } else if (choice == 1 && computersChoice == 3) {
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
                 System.out.println("User Wins");
                 score1 = score1 + 1;
                 System.out.println("score : ");
                 System.out.println("user : " + score1);
                 System.out.println("Computer : " + score2);
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
             } else if (choice == 2 && computersChoice == 1) {
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
                 System.out.println("User Wins");
                 score1 = score1 + 1;
                 System.out.println("score : ");
                 System.out.println("user : " + score1);
                 System.out.println("Computer : " + score2);
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
             } else if (choice == 3 && computersChoice == 2) {
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
                 System.out.println("User Wins");
                 score1 = score1 + 1;
                 System.out.println("score : ");
                 System.out.println("user : " + score1);
                 System.out.println("Computer : " + score2);
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
             } else {
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
                 System.out.println("Computer Wins");
                 score2 = score2 + 1;
                 System.out.println("score : ");
                 System.out.println("user : " + score1);
                 System.out.println("Computer : " + score2);
-                 System.out.println("____________________\n");
+                System.out.println("____________________\n");
             }
 
         }
