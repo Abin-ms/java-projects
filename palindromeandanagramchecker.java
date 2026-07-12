@@ -24,7 +24,6 @@ public class palindromeandanagramchecker {
                     System.out.println("___________________");
                     System.out.println("Enter the string");
                     original = ss.nextLine();
-                    palindrome(original);
                     System.out.println(palindrome(original));
                      System.out.println("___________________");
                     break;
@@ -33,6 +32,7 @@ public class palindromeandanagramchecker {
                     System.out.println("Anagram or not.");
                     System.out.println("___________________");
                     System.out.println("Enter the string");
+                    break;
                 case 3:
                     System.out.println("Thank you!!!");
                     ss.close();
@@ -52,6 +52,6 @@ public class palindromeandanagramchecker {
             return "The string " + original + " is palindrome";
 
         else
-            return "The string " + original + "is not plaindrome";
+            return "The string " + original + "is not a plaindrome";
     }
 }
