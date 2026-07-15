@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class palindromeandanagramchecker {
@@ -31,7 +32,19 @@ public class palindromeandanagramchecker {
                     System.out.println("___________________");
                     System.out.println("Anagram or not.");
                     System.out.println("___________________");
-                    System.out.println("Enter the string");
+                    System.out.println("Enter the first string");
+                    String firststring = ss.nextLine();
+                    System.out.println("Enter the second String");
+                    String secondstring = ss.nextLine();
+                    firststring = firststring.toLowerCase().replace(" ", "");
+                    secondstring = secondstring.toLowerCase().replace(" ", "");
+                    if (!anagram(firststring, secondstring)) {
+                        System.out.println("The strings are not anagram");
+                    }
+                    else{
+                        System.out.println("The strings are anagram");
+                    }
+                    
                     break;
                 case 3:
                     System.out.println("Thank you!!!");
@@ -43,6 +56,7 @@ public class palindromeandanagramchecker {
             }
 
         }
+        ss.close();
         
     }
 
@@ -53,5 +67,22 @@ public class palindromeandanagramchecker {
 
         else
             return "The string " + original + "is not a plaindrome";
+    }
+
+    public static boolean anagram(String firststring,String secondstring){
+        if(firststring.length()!=secondstring.length()){
+            return false;
+        }
+        else{
+            char[] c1 = firststring.toCharArray();
+            char[] c2 = secondstring.toCharArray();
+            Arrays.sort(c1);
+            Arrays.sort(c2);
+            if (Arrays.equals(c1, c2) ) 
+                return true;
+
+            return false;
+        }
+
     }
 }
