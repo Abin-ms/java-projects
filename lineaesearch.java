@@ -5,6 +5,8 @@ public class lineaesearch {
         System.out.println("__________________");
         System.out.println("Linear search");
         System.out.println("__________________");
+
+        System.out.println("Enter the array");
         
     }
 }

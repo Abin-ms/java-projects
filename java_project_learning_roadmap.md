@@ -14,8 +14,8 @@ Work through each stage roughly in order. Don't rush — the goal is depth, not 
 4. Tic-Tac-Toe (2-player, console) — 2D arrays, win-condition logic - DONE✔️
 5. Rock-Paper-Scissors (vs computer) — randomness, loops, score tracking - DONE✔️
 6. Password Strength Checker — string manipulation, conditionals - DONE✔️
-7. Palindrome & Anagram Checker — string/array manipulation - 
-8. Simple ATM Simulator (single account, no classes yet) — control flow, basic validation
+7. Palindrome & Anagram Checker — string/array manipulation - DONE✔️
+8. Simple ATM Simulator (single account, no classes yet) — control flow, basic validation - 
 9. Multiplication Table Generator — nested loops
 10. Basic Unit Converter (length/weight/currency using fixed rates) — methods, arrays/maps of conversion factors
 
