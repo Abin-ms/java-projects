@@ -19,10 +19,27 @@ public class lineaesearch {
         for(i=0;i< size;i++){
             System.out.println(arr[i]);
         }
+        System.out.println("Enter the element to be fetched : ");
+        int key = ss.nextInt();
+        if
+
+
+
 
 ss.close();
         
     }
     
+    public static int Check(int size,int arr,int key ){
+        for(int i = 0;i<size;i++){
+            if(arr[i]==key){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+
+    }
     
 }
