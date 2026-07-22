@@ -19,7 +19,7 @@ public class atmsimu {
                 case 2:
                     System.out.println("Enter the amount to Deposite");
                     deposite = ss.nextInt();
-                    if(!validateAmount(deposite, balance)){
+                    if(!validateAmount(deposite)){
                         System.out.println("Invalid Amount!!");
                     }
                     else{
@@ -45,7 +45,6 @@ public class atmsimu {
                     System.out.println("Thank You For Choosing Our Bank , Have A Nice Day");
                     ss.close();
                     return;
-                    break;
             
                 default:
                     System.out.println("Invalid Option");
@@ -75,11 +74,11 @@ public class atmsimu {
         }
     }
     public static boolean balanceValidation(int amount,int balance){
-        if(amount<=balance){
-            return true;
+        if(amount>balance || amount<0 ){
+            return false;
         }
         else{
-            return false;
+            return true;
         }
     }
 
