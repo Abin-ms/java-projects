@@ -8,7 +8,7 @@ public class multitablegenerator {
         System.out.println("Enter the number : ");
         int number = ss.nextInt();
         for(int i = 1 ; i<11 ; i++){
-            result = number*1;
+            result = number*i;
 
             System.out.println(+number+"X"+i+"="+result);
         }

@@ -15,8 +15,8 @@ public class multiplicationtablegenerator3 {
         int i;
         for(i = range1 ; i<=range2; i++){
             for(int j = 1 ; j<11 ; j++){
-                result = range1 * j;
-                System.out.println(+range1+"X"+j+"="+result);
+                result = j * i;
+                System.out.println(+i+"X"+j+"="+result);
             }
         }
         
