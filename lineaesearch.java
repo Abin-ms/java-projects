@@ -21,7 +21,7 @@ public class lineaesearch {
         }
         System.out.println("Enter the element to be fetched : ");
         int key = ss.nextInt();
-        if
+        
 
 
 
