@@ -56,9 +56,10 @@ public class palindromeandanagramchecker {
             }
 
         }
-        ss.close();
+       
         
     }
+    
 
     public static String palindrome(String original) {
         String reversed = new StringBuilder(original).reverse().toString();
