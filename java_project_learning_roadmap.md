@@ -16,8 +16,8 @@ Work through each stage roughly in order. Don't rush — the goal is depth, not 
 6. Password Strength Checker — string manipulation, conditionals - DONE✔️
 7. Palindrome & Anagram Checker — string/array manipulation - DONE✔️
 8. Simple ATM Simulator (single account, no classes yet) — control flow, basic validation - DONE✔️
-9. Multiplication Table Generator — nested loops - 
-10. Basic Unit Converter (length/weight/currency using fixed rates) — methods, arrays/maps of conversion factors
+9. Multiplication Table Generator — nested loops - DONE✔️
+10. Basic Unit Converter (length/weight/currency using fixed rates) — methods, arrays/maps of conversion factors - 
 
 **Goal:** total comfort with syntax, loops, arrays, and breaking logic into methods before touching OOP.
 
