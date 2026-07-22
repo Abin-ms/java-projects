@@ -13,10 +13,12 @@ public class multiplicationtablegenerator3 {
         range2 = ss.nextInt();
 
         int i;
+        
         for(i = range1 ; i<=range2; i++){
+            System.out.println("Multiplication Table of"+i);
             for(int j = 1 ; j<11 ; j++){
                 result = j * i;
-                System.out.println(+i+"X"+j+"="+result);
+                System.out.println(i+"X"+j+"="+result);
             }
         }
         
