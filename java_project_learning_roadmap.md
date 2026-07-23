@@ -26,7 +26,7 @@ Work through each stage roughly in order. Don't rush — the goal is depth, not 
 ## Stage 2: OOP Basics
 **Concepts:** classes, objects, constructors, encapsulation, getters/setters, `ArrayList`, basic file I/O
 
-1. Library Management System (console) — `Book`, `Member`, `Library` classes
+1. Library Management System (console) — `Book`, `Member`, `Library` classes - 
 2. Bank Account Simulator — multiple accounts, deposit/withdraw, transaction history
 3. Student Grade Management System — objects, `ArrayList`, sorting, save/load to text file
 4. Contact Book (add/search/delete contacts) — CRUD with objects, `ArrayList`
