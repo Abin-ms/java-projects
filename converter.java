@@ -44,16 +44,79 @@ public class converter {
                             break;
                         case 5:
                             break;
+
                         default:
+                            System.out.println("Invalid Option");
                             break;
                     }
 
                     break;
 
                 case 2:
+                    System.out.println("__________________");
+                    System.out.println(" Weight converter");
+                    System.out.println("__________________");
+                    System.out.println("1.Gram");
+                    System.out.println("2.Kilogram");
+                    System.out.println("3.Pound");
+                    System.out.println("4.Exit");
+                    System.out.println("From(Choose your option from above) : ");
+                    int weightchoice = ss.nextInt();
+                    System.out.println("To(Choose you option from above");
+                    int weightchoice2 = ss.nextInt();
+                    System.out.println("Enter the value to be converted(Weight) : ");
+                    double Weight = ss.nextDouble();
+
+                    switch (weightchoice) {
+                        case 1:
+                            System.out.println(Weight + "=" + fromGrams(Weight, weightchoice2));
+                            break;
+                        case 2:
+                            System.out.println(Weight + "=" + fromKilograms(Weight, weightchoice2));
+                            break;
+                        case 3:
+                            System.out.println(Weight + "=" + fromPounds(Weight, weightchoice2));
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            System.out.println("Invalid option");
+                            break;
+                    }
+
                     break;
 
                 case 3:
+                    System.out.println("__________________");
+                    System.out.println(" Currency converter");
+                    System.out.println("__________________");
+                    System.out.println("1.USD");
+                    System.out.println("2.EUR");
+                    System.out.println("3.SAUDI RIYAL");
+                    System.out.println("4.Exit");
+                    int currency = ss.nextInt();
+                    System.out.println("Enter the amount");
+                    double amount = ss.nextDouble();
+                    double result;
+                    switch (currency) {
+                        case 1:
+                            result = amount * 86;
+                            System.out.println(amount + "=" + result + "INR");
+                            break;
+                        case 2:
+                            result = amount * 100;
+                            System.out.println(amount + "=" + result + "INR");
+                            break;
+                        case 3:
+                            result = amount * 25.82;
+                            System.out.println(amount + "=" + result + "INR");
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            break;
+                    }
+
                     break;
 
                 case 4:
@@ -91,7 +154,7 @@ public class converter {
 
             case 5:
                 menu();
-                break;
+
             default:
                 break;
         }
@@ -160,6 +223,55 @@ public class converter {
             case 5:
                 menu();
                 break;
+            default:
+                break;
+        }
+
+    }
+
+    public static double fromGrams(double Weight, int weightchoice2) {
+        switch (weightchoice2) {
+            case 1:
+
+                return Weight;
+            case 2:
+                return Weight / 1000;
+            case 3:
+                return Weight / 453.59237;
+            case 4:
+                menu();
+            default:
+                break;
+        }
+
+    }
+
+    public static double fromKilograms(double Weight, int weightchoice2) {
+        switch (weightchoice2) {
+            case 1:
+                return Weight * 1000;
+            case 2:
+                return Weight;
+            case 3:
+                return Weight * 2.20462;
+            case 4:
+                menu();
+            default:
+                break;
+        }
+
+    }
+
+    public static double fromPounds(double Weight, int weightchoice2) {
+        switch (weightchoice2) {
+            case 1:
+                return Weight * 453.592;
+            case 2:
+                return Weight / 2.205;
+            case 3:
+                return Weight;
+            case 4:
+                menu();
             default:
                 break;
         }
