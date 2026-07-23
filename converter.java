@@ -156,7 +156,7 @@ public class converter {
                 menu();
 
             default:
-                break;
+                return -1;
         }
     }
 
@@ -174,11 +174,8 @@ public class converter {
             case 4:
                 return value * 0.621371;
 
-            case 5:
-                menu();
-                break;
             default:
-                break;
+                return -1;
         }
 
     }
@@ -197,11 +194,8 @@ public class converter {
             case 4:
                 return value / 160900;
 
-            case 5:
-                menu();
-                break;
             default:
-                break;
+                return -1;
         }
 
     }
@@ -220,11 +214,8 @@ public class converter {
             case 4:
                 return value;
 
-            case 5:
-                menu();
-                break;
             default:
-                break;
+                return -1;
         }
 
     }
@@ -238,10 +229,9 @@ public class converter {
                 return Weight / 1000;
             case 3:
                 return Weight / 453.59237;
-            case 4:
-                menu();
+
             default:
-                break;
+                return -1;
         }
 
     }
@@ -254,10 +244,9 @@ public class converter {
                 return Weight;
             case 3:
                 return Weight * 2.20462;
-            case 4:
-                menu();
+
             default:
-                break;
+                return -1;
         }
 
     }
@@ -270,12 +259,11 @@ public class converter {
                 return Weight / 2.205;
             case 3:
                 return Weight;
-            case 4:
-                menu();
+
             default:
-                break;
+                return -1;
         }
 
-    }
+    }   
 
 }
