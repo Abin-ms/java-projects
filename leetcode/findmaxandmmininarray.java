@@ -15,6 +15,7 @@ public class findmaxandmmininarray {
                 lowest = arrayy[i];
             }
         }
+        
         System.out.println("Highest element in the array : "+ highest);
         System.out.println("Lowest element in the array : "+lowest);
     }
