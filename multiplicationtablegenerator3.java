@@ -18,7 +18,7 @@ public class multiplicationtablegenerator3 {
             System.out.println("Multiplication Table of"+i);
             for(int j = 1 ; j<11 ; j++){
                 result = j * i;
-                System.out.println(i+"X"+j+"="+result);
+                System.out.println(j+"X"+i+"="+result);
             }
         }
         
