@@ -9,6 +9,7 @@ public class pg1 {
         
         b = b + num;  // we can add string and an int value and the '+' will concat and make it as one sigle string.
         System.out.println(b); // abc123
+        //duck
 
     }
 }
