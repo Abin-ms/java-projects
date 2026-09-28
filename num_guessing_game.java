@@ -21,6 +21,8 @@ class num_guessing_game{
             System.out.println("Your guess was too high");
         }  
         else{
+
+            
             System.out.println("your guess was too low");
         }
         }
