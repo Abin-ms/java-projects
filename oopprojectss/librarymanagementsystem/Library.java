@@ -5,14 +5,30 @@ import java.util.ArrayList;
 public class Library {
 
     private ArrayList<Book> books;
+    private ArrayList<Member> members;
 
     Library() {
         books = new ArrayList<>();
+        members = new ArrayList<>();
     }
 
     public void addBook(Book book) {
         books.add(book);
 
+    }
+    public void addMember(Member member){
+        members.add(member);
+    }
+    public void removeMember(int memberId){
+        for(Member member : members){
+            if(member.getMemberId() == memberId){
+                members.remove(member);
+                return ;
+            }
+            else{
+                System.out.println("Member not found!!!");
+            }
+        }
     }
 
     public void displayBooks() {
@@ -77,7 +93,7 @@ public class Library {
             }
         }
         if (!bookFound) {
-            System.out.println("The book is not found.!!");   
+            System.out.println("The book is not found.!!");
         }
     }
 
@@ -85,9 +101,15 @@ public class Library {
 
         for (Book book : books) {
             if (book.getBookId() == bookId) {
-                books.remove(book);
-                System.out.println("Book is removed succesfully..!!1");
-                return;
+                if (book.getisAvailable()) {
+                    books.remove(book);
+                    System.out.println("Book is removed succesfully..!!1");
+                    return;
+                }
+                else{
+                    System.out.println("Book is Borrowed cannot remove borrowed books.!!!");
+                }
+
             }
 
         }
