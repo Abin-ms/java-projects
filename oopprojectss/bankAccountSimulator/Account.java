@@ -1,12 +1,14 @@
 package oopprojectss.bankAccountSimulator;
 
+import java.util.Scanner;
+
 public class Account {
     private int accountNumber;
     private String accountHolderName;
-    private double balance;
+    private int balance;
     private String accountType;
 
-    public Account(int accountNumber, String accountHolderName, double balance, String accountType) {
+    public Account(int accountNumber, String accountHolderName, int balance, String accountType) {
         this.accountNumber = accountNumber;
         this.accountHolderName = accountHolderName;
         this.balance = balance;
@@ -21,7 +23,7 @@ public class Account {
         return accountHolderName;
     }
 
-    public double getBalance() {
+    public int getBalance() {
         return balance;
     }
 
@@ -30,7 +32,7 @@ public class Account {
     }
 
     public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
+        this.accountNumber = accountNumber ;
     }
 
     public void setAccountHolderName(String accountHolderName) {
@@ -41,7 +43,7 @@ public class Account {
         this.accountType = accountType;
     }
 
-    public void deposite(double amount) {
+    public void deposite(int amount) {
 
         if (amount > 0) {
             this.balance = this.balance + amount;
@@ -52,33 +54,32 @@ public class Account {
 
     }
 
-    public void withdraw(double amount) {
-        if ((amount > 0) && (amount <= balance)) {
+    public void withdraw(int amount) {
+        if(amount<=0){
+            System.out.println("Enter a valid amount.");
+        }
+        else if(amount > balance){
+            System.out.println("Insufficient Balance!!");
+        } 
+        else {
             this.balance = this.balance - amount;
             System.out.println("Money Withdrawn Succesfullyy...");
-        } else {
-            System.out.println("Insufficient Balance!!");
         }
 
     }
 
-    public void displayAccountDetails() {
-        System.out.println("Account Number : " + this.accountNumber);
-        System.out.println("Account holder Name : " + this.accountHolderName);
-        System.out.println("Account Type : " + this.accountType);
-        System.out.println("Balance : " + this.balance);
-    }
-
-    public void balanceAfterTransaction(){
-        int chh = 0 ;
-        do{
+    public void balanceAfterTransaction() {
+        Scanner s1 = new Scanner(System.in);
+        int chh = 0;
+        do {
             System.out.println("Do you want to check your balance : ");
             System.out.println("1.Yes");
             System.out.println("2.No");
+            chh = s1.nextInt();
 
             switch (chh) {
                 case 1:
-                    System.out.println("Your Balance : "+this.getBalance());
+                    System.out.println("Current Balance : " + this.getBalance());
                     break;
                 case 2:
                     System.out.println("Thank you for choosing us.");
@@ -87,8 +88,7 @@ public class Account {
                     System.out.println("Enter valid choice");
                     break;
             }
-        }while(chh!=2);
-        
+        } while (chh != 2);
+        s1.close();
     }
-    
 }
