@@ -69,4 +69,26 @@ public class Account {
         System.out.println("Balance : " + this.balance);
     }
 
+    public void balanceAfterTransaction(){
+        int chh = 0 ;
+        do{
+            System.out.println("Do you want to check your balance : ");
+            System.out.println("1.Yes");
+            System.out.println("2.No");
+
+            switch (chh) {
+                case 1:
+                    System.out.println("Your Balance : "+this.getBalance());
+                    break;
+                case 2:
+                    System.out.println("Thank you for choosing us.");
+                    break;
+                default:
+                    System.out.println("Enter valid choice");
+                    break;
+            }
+        }while(chh!=2);
+        
+    }
+    
 }
