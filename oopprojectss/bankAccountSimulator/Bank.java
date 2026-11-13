@@ -73,6 +73,7 @@ public class Bank {
             if (account.getAccountNumber() == accountNumber) {
                 account.withdraw(amount);
                 account.balanceAfterTransaction();
+                return;
             }
         }
         System.out.println("You entered the wrong credentails.");
@@ -82,6 +83,7 @@ public class Bank {
         for (Account account : accounts) {
             if (account.getAccountNumber() == accountNumber) {
                 System.out.println("Curren balance : " + account.getBalance());
+                return;
             }
         }
         System.out.println("You entered the wrong credentails.");
@@ -99,7 +101,6 @@ public class Bank {
     }
 
     public void displayAccountDetails(int accountNumber) {
-
         for (Account account : accounts) {
             if (account.getAccountNumber() == accountNumber) {
 
@@ -111,7 +112,6 @@ public class Bank {
 
             }
         }
-        System.out.println("Enter valide Account number");
-
+        System.out.println("Enter valid Account number");
     }
 }

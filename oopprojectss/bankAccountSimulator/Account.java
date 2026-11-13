@@ -32,7 +32,7 @@ public class Account {
     }
 
     public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber ;
+        this.accountNumber = accountNumber;
     }
 
     public void setAccountHolderName(String accountHolderName) {
@@ -55,13 +55,11 @@ public class Account {
     }
 
     public void withdraw(int amount) {
-        if(amount<=0){
+        if (amount <= 0) {
             System.out.println("Enter a valid amount.");
-        }
-        else if(amount > balance){
+        } else if (amount > balance) {
             System.out.println("Insufficient Balance!!");
-        } 
-        else {
+        } else {
             this.balance = this.balance - amount;
             System.out.println("Money Withdrawn Succesfullyy...");
         }
@@ -71,24 +69,21 @@ public class Account {
     public void balanceAfterTransaction() {
         Scanner s1 = new Scanner(System.in);
         int chh = 0;
-        do {
-            System.out.println("Do you want to check your balance : ");
-            System.out.println("1.Yes");
-            System.out.println("2.No");
-            chh = s1.nextInt();
-
-            switch (chh) {
-                case 1:
-                    System.out.println("Current Balance : " + this.getBalance());
-                    break;
-                case 2:
-                    System.out.println("Thank you for choosing us.");
-                    break;
-                default:
-                    System.out.println("Enter valid choice");
-                    break;
-            }
-        } while (chh != 2);
+        System.out.println("Do you want to check your balance : ");
+        System.out.println("1.Yes");
+        System.out.println("2.No");
+        chh = s1.nextInt();
+        if (chh == 1) {
+            System.out.println("Current Balance : " + this.getBalance());
+            s1.close();
+            return;
+        } else if (chh == 2) {
+            s1.close();
+            return;
+        } else {
+            System.out.println("Invalid input");
+            balanceAfterTransaction();
+        }
         s1.close();
     }
 }

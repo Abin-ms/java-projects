@@ -3,11 +3,11 @@ package oopprojectss.bankAccountSimulator;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int choice = 0;
         Scanner sc = new Scanner(System.in);
-        Bank bb = new Bank(); 
-        do{
+        Bank bb = new Bank();
+        do {
             System.out.println("=====Menu=====");
             System.out.println("1.create new Account.");
             System.out.println("2.Remove Account.");
@@ -18,18 +18,17 @@ public class Main {
             System.out.println("7.Exit.");
             System.out.println("Enter your choice:");
             choice = sc.nextInt();
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
                     System.out.println("\nEnter account holders name : ");
                     String accountHolderName = sc.nextLine();
-                    sc.nextLine();
                     System.out.println("Enter Initail balance :");
                     int balance = sc.nextInt();
+                    sc.nextLine();
                     System.out.println("Enter account type : ");
                     String accountType = sc.nextLine();
-                    sc.nextLine();
-                    Account account = new Account(choice, accountHolderName, balance, accountType);
                     bb.createAccount(accountHolderName, balance, accountType);
                     break;
                 case 2:
@@ -48,19 +47,19 @@ public class Main {
                     System.out.println("Enter the amount amount to deposit : ");
                     int amount = sc.nextInt();
                     bb.depositemoney(amount, accountNumber);
-                    return;
+                    break;
                 case 5:
                     System.out.println("Enter the Account number:");
                     accountNumber = sc.nextInt();
                     System.out.println("Enter the amount to Withdraw.");
-                    amount=sc.nextInt();
+                    amount = sc.nextInt();
                     bb.withdrawMoney(amount, accountNumber);
                     break;
                 case 6:
                     System.out.println("Enter the Account number :");
                     accountNumber = sc.nextInt();
                     bb.checkBalance(accountNumber);
-                    return;
+                    break;
                 case 7:
                     System.out.println("Thank you for using our service...");
                     break;
@@ -68,6 +67,7 @@ public class Main {
                     System.out.println("Invalid choice.!!!");
                     break;
             }
-        }while(choice!=4);
+        } while (choice != 7);
+        sc.close();
     }
 }
