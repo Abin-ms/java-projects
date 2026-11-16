@@ -28,7 +28,7 @@ Work through each stage roughly in order. Don't rush — the goal is depth, not 
 
 1. Library Management System (console) — `Book`, `Member`, `Library` classes - ✔️
 2. Bank Account Simulator — multiple accounts, deposit/withdraw, transaction history - ✔️
-3. Student Grade Management System — objects, `ArrayList`, sorting, save/load to text file
+3. Student Grade Management System — objects, `ArrayList`, sorting, save/load to text file - 
 4. Contact Book (add/search/delete contacts) — CRUD with objects, `ArrayList`
 5. Simple Inventory Tracker (single store) — objects, stock updates, low-stock alerts
 6. Movie Ticket Booking (console) — seat objects, booking logic, availability tracking
