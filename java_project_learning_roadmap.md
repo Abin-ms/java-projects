@@ -2,7 +2,6 @@
 ### 70 Projects, 7 Stages — Beginner to Advanced
 
 Work through each stage roughly in order. Don't rush — the goal is depth, not speed. After finishing a stage, pick one earlier project and **refactor it** using what you just learned (e.g., rebuild your Stage 1 calculator using OOP once you hit Stage 2).
-
 ---
 
 ## Stage 1: Fundamentals
