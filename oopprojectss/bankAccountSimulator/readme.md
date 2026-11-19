@@ -1,4 +1,4 @@
-Project objective
+## Project objective
 
 Build a console-based banking application that allows users to create accounts, generate unique account numbers, deposit money, withdraw money, check balances, search accounts, delete accounts and display account details.
 
